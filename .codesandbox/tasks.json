@@ -1,0 +1,24 @@
+{
+    "$schema": "https://codesandbox.io/schemas/tasks.json",
+    "setupTasks": [
+      {
+        "name": "Cài đặt thư viện",
+        "command": "npm install"
+      }
+    ],
+    "tasks": {
+      "run-backend": {
+        "name": "Chạy Backend (8080)",
+        "command": "node webServer.js",
+        "runAtStart": true
+      },
+      "run-frontend": {
+        "name": "Chạy Frontend (3000)",
+        "command": "npm start",
+        "runAtStart": true,
+        "preview": {
+          "port": 3000
+        }
+      }
+    }
+  }
